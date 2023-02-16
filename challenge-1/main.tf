@@ -1,9 +1,9 @@
 module "apis-setup" {
-  source = "./modules/apis-setup/"
-  project_number=var.project_number
+  source         = "./modules/apis-setup/"
+  project_number = var.project_number
 }
 module "network-setup" {
-  source         = "./modules/network-setup"
+  source            = "./modules/network-setup"
   instance_template = google_compute_instance_template.wordpress.id
 
 }
@@ -34,7 +34,7 @@ resource "google_compute_instance_template" "wordpress" {
     startup-script = data.template_file.wordpress_install.rendered
   }
   network_interface {
-   access_config {
+    access_config {
       network_tier = "PREMIUM"
     }
     network    = module.network-setup.private_network
