@@ -34,5 +34,5 @@ tags: ['gcp-cloud-build-sample-build']
 # available options.
 options:
   logging: CLOUD_LOGGING_ONLY
-  pool:
-    name: 'projects/libu-playground-55/locations/us-central1/workerPools/my-worker-pool'
+    #  pool:
+    # name: 'projects/libu-playground-55/locations/us-central1/workerPools/my-worker-pool'
