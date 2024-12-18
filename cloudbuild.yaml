@@ -32,6 +32,7 @@ tags: ['gcp-cloud-build-sample-build']
 # You can configure more options than the ones listed here. Visit
 # https://cloud.google.com/cloud-build/docs/build-config to see the full list of
 # available options.
+#Added worker pool
 options:
   logging: CLOUD_LOGGING_ONLY
   pool:
